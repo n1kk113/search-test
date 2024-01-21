@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class searchSelenide {
+public class SearchSelenide {
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://github.com/";
     }
     @Test
-    void SearchSelenideTest() {
+    void searchSelenideTest() {
         open("selenide/selenide");
         $("#wiki-tab").click();
         $("#wiki-pages-filter").setValue("SoftAssertions");
